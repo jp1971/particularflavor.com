@@ -1,6 +1,6 @@
 # wordpress-quick-start
 
-Lets get WordPress up and running quickly! This wordpress runs on a [Vagrant Box](http://docs.vagrantup.com/v2/boxes.html) virtual machine, bootstrapped with a composer.json file. The front end dependencies are handled with [Bower](http://bower.io/) and build processes are handeled by [Grunt](http://gruntjs.com/getting-started). Both grunt and bower have [node.js](http://nodejs.org/) as a dependency. The CSS preprocesser is [LESS](http://lesscss.org/).
+Let's get WordPress up and running quickly! This repo provides the latest version of WordPress running on a [Vagrant](http://docs.vagrantup.com/v2/boxes.html) virtual machine, bootstrapped with a composer.json file. The front end dependencies are handled with [Bower](http://bower.io/) and build processes are handeled by [Grunt](http://gruntjs.com/getting-started). Both grunt and bower have [node.js](http://nodejs.org/) as a dependency. The CSS preprocesser is [LESS](http://lesscss.org/).
 
 ##Installing Dependencies
 First you'll need node, follow the node installer [here](http://nodejs.org/)
@@ -43,8 +43,3 @@ Now we need to install all our reqiured pacakges with bower. Run in the terminal
 ```
 bower install
 ```
-
-
-
-
-
