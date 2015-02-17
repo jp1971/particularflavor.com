@@ -1,0 +1,16 @@
+default:
+  description: 'Production tasks'
+  tasks:
+    - 'less'
+    - 'cssmin'
+    - 'requirejs:prod'
+dev:
+  description: 'Development tasks'
+  tasks:
+    - 'less'
+    - 'requirejs:dev'
+    - 'watch'
+images:
+  description: 'Crunch image'
+  tasks:
+    - 'imagemin'

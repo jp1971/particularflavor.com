@@ -1,0 +1,28 @@
+{
+  "config": {
+    "preferred-install": "dist"
+  },
+  "require": {
+    "krnl": "dev-master",
+    "composer/installers": "~1.0"
+  },
+  "require-dev": {
+      "wp-coding-standards/wpcs": "dev-master",
+      "squizlabs/php_codesniffer": "*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.krnlthe.me"
+    }
+  ],
+  "extra": {
+    "installer-paths": {
+      "wp-content/themes/_{$name}/": ["type:wordpress-theme"]
+    }
+  },
+  "scripts": {
+      "post-install-cmd": "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
+      "post-update-cmd": "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs"
+  }
+}
