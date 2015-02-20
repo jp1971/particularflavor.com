@@ -1,6 +1,6 @@
 # wordpress-quick-start
 
-Lets get WordPress up and running quickly! This wordpress runs on a [Vagrant Box](http://docs.vagrantup.com/v2/boxes.html) virtual machine, bootstrapped with a composer.json file. The front end dependencies are handled with [Bower](http://bower.io/) and build processes are handeled by [Grunt](http://gruntjs.com/getting-started). Both grunt and bower have [node.js](http://nodejs.org/) as a dependency. The CSS preprocesser is [LESS](http://lesscss.org/).
+Let's get WordPress up and running quickly! This WordPress runs on a [Vagrant Box](http://docs.vagrantup.com/v2/boxes.html) virtual machine, bootstrapped with a composer.json file. The front end dependencies are handled with [Bower](http://bower.io/) and build processes are handeled by [Grunt](http://gruntjs.com/getting-started). Both grunt and bower have [node.js](http://nodejs.org/) as a dependency. The CSS preprocesser is [LESS](http://lesscss.org/).
 
 ##Cloning me!
 We can't just build off of me! think of all the great developers that need me too. What we'll have to do is make a bare clone of myself and then a mirror push it sounds harder than it is. To set up a project create a new EMPTY github repository, then open terminal and run:
@@ -9,7 +9,7 @@ git clone --bare https://github.com/athletics/wordpress-quick-start.git
 cd wordpress-quick-start.git
 git push --mirror https://github.com/athletics/new-great-repository.git
 
-#time to clean the mess you made
+#we don't need me anymore, go back one directory and remove me!
 cd ../
 rm -rf wordpress-quick-start.git
 
