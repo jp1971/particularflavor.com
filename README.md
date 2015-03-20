@@ -27,7 +27,6 @@ Once this is complete, delete the bare repository by running the following comma
 cd ../
 
 rm -rf wordpress-quick-start.git
-
 ```
 
 ## Installing WordPress
@@ -41,7 +40,7 @@ Clone the repository to which you mirror pushed in the step above, `cd` into its
 Once WordPress is installed, build the child theme by running:
 
 ```
-child_theme.sh
+./child_theme.sh
 ```
 
 The child_theme.sh script will delete this file and replace it with a README that provides instructions for installing Node.js, Bower, Composer and Grunt.
