@@ -1,59 +1,53 @@
-# wordpress-quick-start
+# WP-Scaffold
 
-Let's get WordPress up and running quickly! This WordPress runs on a [Vagrant Box](http://docs.vagrantup.com/v2/boxes.html) virtual machine, bootstrapped with a composer.json file. The front end dependencies are handled with [Bower](http://bower.io/) and build processes are handeled by [Grunt](http://gruntjs.com/getting-started). Both grunt and bower have [node.js](http://nodejs.org/) as a dependency. The CSS preprocesser is [LESS](http://lesscss.org/).
+This repository provides the following:
 
-##Cloning me!
-We can't just build off of me! think of all the great developers that need me too. What we'll have to do is make a bare clone of myself and then a mirror push it sounds harder than it is. To set up a project create a new EMPTY github repository, then open terminal and run:
+* A [Vagrant](http://docs.vagrantup.com/v2/boxes.html) virtual machine running Ubunutu 14.0.4, Apache 2.4.7, MySQL 5.5.40, PHP 5.5.9, [WP-CLI](http://wp-cli.org/) and more.
+* A shell script (wordpress.sh) that installs latest stable version of WordPress in the root
+* The Manifest parent WordPress theme which includes [ACF PRO](http://www.advancedcustomfields.com/pro/), [Timber](http://upstatement.com/timber/) and a number of custom functions and plugins
+* An interactive shell script (child_theme.sh) that builds a WordPress child theme based on input
+* [Bower](http://bower.io/) for managing front end dependencies
+* [Grunt](http://gruntjs.com/getting-started) for running tasks such as compiling LESS files, minifying assets and linting JavaScript and PHP files
+
+## Getting started
+
+To create a new project from this repository, start by creating a new, EMPTY Github repostory. Then, open a terminal and run:
+
 ```
 git clone --bare https://github.com/athletics/wordpress-quick-start.git
-cd wordpress-quick-start.git
-git push --mirror https://github.com/athletics/new-great-repository.git
 
-#we don't need me anymore, go back one directory and remove me!
+cd wordpress-quick-start.git
+
+git push --mirror https://github.com/athletics/new-great-repository.git
+```
+
+Once this is complete, delete the bare repository by running the following commands:
+
+```
 cd ../
+
 rm -rf wordpress-quick-start.git
 
 ```
 
+## Installing WordPress
 
-##Installing Dependencies
-First you'll need node, follow the node installer [here](http://nodejs.org/)
-
-Next you need to install Bower and Grunt globally.
-
-Go to terminal and run
-```
-npm install -g bower
-```
-then
-```
-npm install -g grunt-cli
-```
-Next you'll need wget for the wp-installer. If you're using OS X, install [Homebrew](http://brew.sh/). Once homebrew is installed run 
-```
-brew install wget
-```
-
-## ENOUGH, Lets get running
-
-First, in terminal, cd into the quickstart directory, run the install_wordpress.sh file with the command:
+Clone the repository to which you mirror pushed in the step above, `cd` into its root, then open a terminal and run:
 
 ```
-./install_wordpress.sh
-```
-This will install the latest verison of WordPress to the webroot.
-
-Great, now lets bootstrap our porject with a parent theme using the composer file. In terminal run:
-```
-composer install
+./wordpress.sh
 ```
 
-Next, we need to install all the node pacakage dependences for grunt, do this by running:
+Once WordPress is installed, build the child theme by running:
+
 ```
-npm install
+child_theme.sh
 ```
 
-Now we need to install all our reqiured pacakges with bower. Run in the terminal:
+The child_theme.sh script will delete this file and replace it with a README that provides instructions for installing Node.js, Bower, Composer and Grunt.
+
+If you receive a permission denied error running either of the scripts above, run:
+
 ```
-bower install
+chmod +x wordpress.sh
 ```
