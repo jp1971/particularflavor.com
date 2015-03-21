@@ -1,11 +1,11 @@
-# WP-Scaffold
+# Manifest Scaffold
 
-This repository provides the following:
+This repository is a scaffold for the manifest provides the following:
 
 * A [Vagrant](http://docs.vagrantup.com/v2/boxes.html) virtual machine running Ubunutu 14.0.4, Apache 2.4.7, MySQL 5.5.40, PHP 5.5.9, [WP-CLI](http://wp-cli.org/) and more.
 * A shell script (wordpress.sh) that installs latest stable version of WordPress in the root
-* The Manifest parent WordPress theme which includes [ACF PRO](http://www.advancedcustomfields.com/pro/), [Timber](http://upstatement.com/timber/) and a number of custom functions and plugins
-* An interactive shell script (child_theme.sh) that builds a WordPress child theme based on input
+* The Manifest WordPress parent theme which includes [ACF PRO](http://www.advancedcustomfields.com/pro/), [Timber](http://upstatement.com/timber/) and a number of custom functions and plugins
+* The Manifest WordPress child theme that provides an ideal theme structure along with an interactive shell script that handles project specfic naming of files and file contents
 * [Bower](http://bower.io/) for managing front end dependencies
 * [Grunt](http://gruntjs.com/getting-started) for running tasks such as compiling LESS files, minifying assets and linting JavaScript and PHP files
 
