@@ -17,7 +17,8 @@ module.exports = {
 			mainConfigFile: '<%= config.paths.theme %>/js/main.js',
 			name: 'main',
 			out: '<%= config.paths.theme %>/assets/js/site.min.js',
-			preserveLicenseComments: false
+			preserveLicenseComments: false,
+			optimize: 'uglify2'
 		}
 	}
 
