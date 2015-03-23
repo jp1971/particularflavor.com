@@ -10,9 +10,9 @@ module.exports = {
 			dest: '<%= config.paths.theme %>/assets/css/',
 			ext: '.min.css'
 		} ],
-        options : {
-            keepSpecialComments: '0'
-        }
+		options : {
+			keepSpecialComments: '0'
+		}
 	}
 
 };

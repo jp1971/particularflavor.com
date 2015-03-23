@@ -5,9 +5,10 @@ module.exports = {
 	'css.site': {
 		files: [
 			'<%= config.paths.theme %>/less/**/*.less',
+			'<%= config.paths.theme %>/less/**/**/*.less',
 			'!<%= config.paths.theme %>/less/admin/*.less'
 		],
-		tasks: [ 'less:site' ],
+		tasks: [ 'less:site', 'cssmin' ],
 		options: {
 			livereload: true
 		}
@@ -24,7 +25,7 @@ module.exports = {
 			'<%= config.paths.theme %>/js/*.js',
 			'<%= config.paths.theme %>/js/**/*.js'
 		],
-		tasks: [ 'requirejs:dev' ]
+		tasks: [ 'requirejs:dev', 'require:prod' ]
 	}
 
 };

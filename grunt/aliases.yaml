@@ -3,12 +3,7 @@ default:
   tasks:
     - 'less'
     - 'cssmin'
-    - 'requirejs:prod'
-dev:
-  description: 'Development tasks'
-  tasks:
-    - 'less'
-    - 'requirejs:dev'
+    - 'requirejs'
     - 'watch'
 images:
   description: 'Crunch image'
