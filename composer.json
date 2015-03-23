@@ -4,6 +4,7 @@
   },
   "require": {
     "krnl": "dev-master",
+    "mnfst-child-theme": "dev-master",
     "composer/installers": "~1.0"
   },
   "require-dev": {
