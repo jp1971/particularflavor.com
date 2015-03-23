@@ -1,21 +1,21 @@
 {
-  "name": "wordpress-quick-start",
+  "name": "mnfst-child-theme",
   "version": "1.0.0",
-  "description": "get up and running with wordpress quick",
+  "description": "The grunt package list for mnfst-child-theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://kylegoines@github.com/athletics/wordpress-quick-start.git"
+    "url": "mnfst-child-theme-uri.git"
   },
   "author": "athletics",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/athletics/wordpress-quick-start/issues"
+    "url": "mnfst-child-theme-uri/issues"
   },
-  "homepage": "https://github.com/athletics/wordpress-quick-start",
+  "homepage": "mnfst-child-theme-uri",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
