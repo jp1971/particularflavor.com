@@ -30,7 +30,9 @@ cd ../
 rm -rf manifest-scaffold.git
 ```
 
-## Installing WordPress
+## Installing WordPress and Configuring Themes
+
+*Note: If you receive a permission denied error trying to run either of the scripts below, run* `chmod +x wordpress.sh` *or* `chmod +x manifest.sh`  
 
 Clone the repository to which you mirror pushed in the step above, `cd` into its root, then open a terminal and run:
 
@@ -42,11 +44,6 @@ Once WordPress is installed, configure the Manifest parent and child themes by r
 
 ```
 ./mainfest.sh
-```
-*Note: If you receive a permission denied error trying to run either of the scripts above, run the following command:*
-
-```
-chmod +x wordpress.sh
 ```
 
 This script is interactive and will change directory and file names and file contents based on user input. It will also delete this file and replace it with a README that provides instructions for installing starting the virtual server, configuring WordPress and installing the prerequistes needed to use the included development tools.  
