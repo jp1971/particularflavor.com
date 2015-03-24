@@ -42,6 +42,7 @@ printf '.\n'
 printf '.\n'
 sed -e "s/mnfst-child-theme/$themename/g" -i '' bin/bower/post_install.sh
 sed -e "s/mnfst-child-theme/$themeslug/g" -i '' grunt/config.js
+sed -e "s/mnfst-child-theme/$themeslug/g" -i '' .bowerrc
 sed -e "s/mnfst-child-theme/$themeslug/g" -i '' bower.json
 sed -e "s/mnfst-child-theme-uri/$themeuri/g" -i '' bower.json
 sed -e "s/mnfst-child-theme/$themeslug/g" -i '' package.json

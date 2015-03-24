@@ -1,0 +1,6 @@
+{
+	"directory" : "wp-content/themes/mnfst-child-theme/bower_components",
+	 "scripts": {
+    	"postinstall": "bash bin/bower/postinstall.sh"
+  	}
+}
