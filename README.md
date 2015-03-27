@@ -2,7 +2,7 @@
 
 This repository is a scaffold for the Make Model Manifest development environment. It provides the following:
 
-* A [Vagrant](http://docs.vagrantup.com/v2/boxes.html) virtual machine running Ubuntu 14.0.4, Apache 2.4.7, MySQL 5.5.40, PHP 5.5.9, [WP-CLI](http://wp-cli.org/) and more.
+* A [Vagrant](http://docs.vagrantup.com/v2/boxes.html) virtual machine running Ubuntu 14.0.4, Apache 2.4.7, MySQL 5.5.40, PHP 5.5.9, Memcached 1.4.14, Postfix 2.11, GNU mailutils, [WP-CLI](http://wp-cli.org/) and more.
 * A shell script (wordpress.sh) that installs latest stable version of WordPress in the root
 * The Manifest WordPress parent theme which includes [ACF PRO](http://www.advancedcustomfields.com/pro/), [Timber](http://upstatement.com/timber/) and a number of custom functions and plugins
 * The Manifest WordPress child theme that provides an ideal theme structure along with an interactive shell script that handles project specfic naming of files and file contents
