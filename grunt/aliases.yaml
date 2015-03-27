@@ -1,5 +1,5 @@
 default:
-  description: 'Production tasks'
+  description: 'Default tasks'
   tasks:
     - 'less'
     - 'cssmin'
