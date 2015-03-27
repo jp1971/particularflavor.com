@@ -3,7 +3,7 @@
     "preferred-install": "dist"
   },
   "require": {
-    "krnl": "dev-master",
+    "mnfst": "dev-master",
     "mnfst-child-theme": "dev-master",
     "composer/installers": "~1.0"
   },
@@ -14,7 +14,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://packages.krnlthe.me"
+      "url": "http://packages.athleticsnyc.com"
     }
   ],
   "extra": {
