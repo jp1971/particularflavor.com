@@ -1,6 +1,6 @@
 # Manifest Scaffold
 
-This repository is a scaffold for the manifest provides the following:
+This repository is a scaffold for the Make Model Manifest development environment. It provides the following:
 
 * A [Vagrant](http://docs.vagrantup.com/v2/boxes.html) virtual machine running Ubuntu 14.0.4, Apache 2.4.7, MySQL 5.5.40, PHP 5.5.9, [WP-CLI](http://wp-cli.org/) and more.
 * A shell script (wordpress.sh) that installs latest stable version of WordPress in the root
@@ -46,4 +46,4 @@ Once WordPress is installed, configure the Manifest parent and child themes by r
 ./mainfest.sh
 ```
 
-This script is interactive and will change directory and file names and file contents based on user input. It will also delete this file and replace it with a README that provides instructions for installing starting the virtual server, configuring WordPress and installing the prerequistes needed to use the included development tools.  
+This script is interactive and will change directory and file names and file contents based on user input. It will also delete this file and replace it with a README that provides instructions for installing the prerequistes needed to use the included development tools, starting the virtual server and configuring WordPress on first run.
