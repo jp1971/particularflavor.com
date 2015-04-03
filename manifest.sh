@@ -1,15 +1,15 @@
 # Make this script executable - chmod +x build.sh
 
 echo
-echo "                 ATHLETICS                  "
-echo "      Manifest Child Theme Build Tool       "
-echo "                Version 1.0                 "
+echo '                 ATHLETICS                  '
+echo '      Manifest Child Theme Build Tool       '
+echo '                Version 1.0                 '
 echo
-echo -n "Child theme full name (e.g. Manifest): "
+echo -n 'Child theme full name (e.g. Manifest): '
 read themename
-echo -n "Child theme slug name (e.g. mnfst): "
+echo -n 'Child theme slug name (e.g. mnfst): '
 read themeslug
-echo -n "Child theme URI (e.g. https://github.com/athletics/manifest): "
+echo -n 'Child theme URI (e.g. https://github.com/athletics/manifest): '
 read themeuri
 echo
 
@@ -40,26 +40,31 @@ printf '.'
 sleep .5  
 printf '.\n'
 printf '.\n'
-sed -e "s/mnfst-child-theme/$themename/g" -i '' bin/bower/post_install.sh
-sed -e "s/mnfst-child-theme/$themeslug/g" -i '' grunt/config.js
-sed -e "s/mnfst-child-theme/$themeslug/g" -i '' .bowerrc
-sed -e "s/mnfst-child-theme/$themeslug/g" -i '' bower.json
-sed -e "s/mnfst-child-theme-uri/$themeuri/g" -i '' bower.json
-sed -e "s/mnfst-child-theme/$themeslug/g" -i '' package.json
-sed -e "s/mnfst-child-theme-uri/$themeuri/g" -i '' package.json
-sed -e "s/child-theme-name/$themename/g" -i '' wp-content/$themeslug/style.css
-sed -e "s/child-theme-uri/${themeuri////\/}/g" -i '' wp-content/$themeslug/style.css
+
+# Replace placeholders with user defined values
+sed -e 's/mnfst-child-theme/$themename/g' -i '' bin/bower/post_install.sh
+sed -e 's/mnfst-child-theme/$themeslug/g' -i '' grunt/config.js
+sed -e 's/mnfst-child-theme/$themeslug/g' -i '' .bowerrc
+sed -e 's/mnfst-child-theme/$themeslug/g' -i '' bower.json
+sed -e 's/mnfst-child-theme-uri/$themeuri/g' -i '' bower.json
+sed -e 's/mnfst-child-theme/$themeslug/g' -i '' package.json
+sed -e 's/mnfst-child-theme-uri/$themeuri/g' -i '' package.json
+sed -e 's/child-theme-name/$themename/g' -i '' wp-content/$themeslug/style.css
+sed -e 's/child-theme-uri/${themeuri////\/}/g' -i '' wp-content/$themeslug/style.css
+
+# Remove Manifest Child Theme from composer.json
+sed -e '/mnfst-child-theme/d' -i '' composer.json
 
 sleep .5 
 
 printf 'Build complete.\n'
 echo
 
-echo -n "Remove this shell script (y/N)?"
+echo -n 'Remove this shell script (y/N)?'
 read del_bool
 
-if [ "$del_bool" == "y" ]; then
-	printf "Removing shell script"
+if [ '$del_bool' == 'y' ]; then
+	printf 'Removing shell script'
 	sleep .5  
 	printf '.'
 	sleep .5 
@@ -68,8 +73,9 @@ if [ "$del_bool" == "y" ]; then
 	printf '.\n'
 	rm build.sh
 else
-	printf "Not removing shell script...\n"
+	printf 'Not removing shell script...\n'
 fi
+
 echo
 
-printf 'Now go make something cool with Manifest!\n'
+printf 'Now go make something rad with Manifest!\n'
