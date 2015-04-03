@@ -1,5 +1,6 @@
 {
 	"preset": "wordpress",
+	"requireLineFeedAtFileEnd": false,
 	"requireSpacesInAnonymousFunctionExpression": {
 		"beforeOpeningRoundBrace": true,
 		"beforeOpeningCurlyBrace": true
