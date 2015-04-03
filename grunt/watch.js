@@ -25,7 +25,7 @@ module.exports = {
 			'<%= config.paths.theme %>/js/*.js',
 			'<%= config.paths.theme %>/js/**/*.js'
 		],
-		tasks: [ 'requirejs:dev', 'require:prod' ]
+		tasks: [ 'requirejs:dev', 'requirejs:prod' ]
 	}
 
 };
