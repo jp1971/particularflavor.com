@@ -1,0 +1,7 @@
+{
+	"preset": "wordpress",
+	"requireSpacesInAnonymousFunctionExpression": {
+		"beforeOpeningRoundBrace": true,
+		"beforeOpeningCurlyBrace": true
+	}
+}
