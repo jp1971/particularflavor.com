@@ -5,6 +5,3 @@
 
 ## Copy RequireJS to public theme directory
 cp wp-content/themes/mnfst-child-theme/bower_components/requirejs/require.js wp-content/themes/mnfst-child-theme/assets/js/
-
-## Copy Throttle/Debounce to the public theme directory
-cp wp-content/themes/mnfst-child-theme/bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js wp-content/themes/mnfst-child-theme/js/vendor/
