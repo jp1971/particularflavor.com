@@ -7,13 +7,13 @@ Vagrant.configure("2") do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "uvv_core_032715"
+  config.vm.box = "uvv_core_041315"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system. If you uncomment the line
   # below, make sure to change "/path/to" to the path to the Dropbox
   # on your local machine
-  config.vm.box_url = "https://www.dropbox.com/s/ycfriui1q2419ow/uvv_core_032715.box?dl=1"
+  config.vm.box_url = "https://www.dropbox.com/s/simj8uzfszlonye/uvv_core_041315.box?dl=1"
 
   # Assign this VM to a host-only network IP, allowing you to access it
   # via the IP. Host-only networks can talk to the host machine as well as
