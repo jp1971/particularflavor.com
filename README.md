@@ -16,7 +16,7 @@ To create a new project from this repository, start by creating a new, EMPTY Git
 ```
 git clone --bare https://github.com/athletics/manifest-scaffold.git
 
-cd wordpress-quick-start.git
+cd manifest-scaffold.git
 
 # Change new-github-repository in the URL below to the slug of the newly created Github repository
 git push --mirror https://github.com/athletics/new-github-repository.git
