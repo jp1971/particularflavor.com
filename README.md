@@ -9,6 +9,12 @@ This repository is a scaffold for the Make Model Manifest development environmen
 * [Bower](http://bower.io/) for managing front end dependencies
 * [Grunt](http://gruntjs.com/getting-started) for running tasks such as compiling LESS files, minifying assets and linting JavaScript and PHP files
 
+##Prerequisites
+
+You'll need Composer and wget for the instructions below. However, you'll need all pre-requisites from the link to complete subsequent steps, so you should make sure everything is installed:
+
+http://docs.athleticsnyc.com/development-environment-prerequisites/
+
 ## Getting started
 
 To create a new project from this repository, start by creating a new, EMPTY Github repostory. Then, open a terminal and run:
