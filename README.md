@@ -49,7 +49,7 @@ composer install
 Once Composer's project dependencies are installed, configure the Manifest parent and child themes by running:
 
 ```
-./mainfest.sh
+./manifest.sh
 ```
 
 This script is interactive and will change directory and file names and file contents based on user input. It will also delete this file and replace it with a README that provides instructions for installing the prerequistes needed to use the included development tools, starting the virtual server and configuring WordPress on first run.
