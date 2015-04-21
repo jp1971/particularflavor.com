@@ -11,6 +11,6 @@ rm -f latest.tar.gz
 # Clean up  
 rm -f latest.tar.gz  
 rm -f wp-content/plugins/hello.php
-rm -f wp-content/themes/twentyfifteen
-rm -f wp-content/themes/twentyfourteen
-rm -f wp-content/themes/twentythirteen
+rm -rf wp-content/themes/twentyfifteen
+rm -rf wp-content/themes/twentyfourteen
+rm -rf wp-content/themes/twentythirteen
