@@ -10,12 +10,13 @@ echo '                 ATHLETICS                  '
 echo '      Manifest Child Theme Build Tool       '
 echo '                Version 1.0                 '
 echo
-echo -n 'Child theme full name (e.g. Manifest): '
+echo -n 'Child theme name (e.g. Manifest): '
 read themename
-echo -n 'Child theme slug name (e.g. manifest): '
+echo -n 'Child theme slug (e.g. manifest): '
 read themeslug
-echo -n 'Child theme repository URL (e.g. https://github.com/athletics/manifest): '
-read themeurl
+echo -n 'Child theme Github URL segment (e.g. The "manifest" in https://github.com/athletics/manifest): '
+read githubslug
+themeurl = "https://github.com/athletics/$githubslug"
 echo
 
 printf 'Changing directory names' 
@@ -44,15 +45,14 @@ sleep .5
 printf '.'
 sleep .5  
 printf '.\n'
-printf '.\n'
 
 # Replace placeholders with user defined values
 sed -e "s/manifest-child-theme/$themeslug/g" -i '' bin/bower/postinstall.sh
 sed -e "s/manifest-child-theme/$themeslug/g" -i '' grunt/config.js
 sed -e "s/manifest-child-theme/$themeslug/g" -i '' .bowerrc
-sed -e "s/manifest-child-theme-url/$themeurl/g" -i '' bower.json
+sed -e "s/manifest-child-theme-url/${themeurl////\/}/g" -i '' bower.json
 sed -e "s/manifest-child-theme/$themeslug/g" -i '' bower.json
-sed -e "s/manifest-child-theme-url/$themeurl/g" -i '' package.json
+sed -e "s/manifest-child-theme-url/${themeurl////\/}/g" -i '' package.json
 sed -e "s/manifest-child-theme/$themeslug/g" -i '' package.json
 sed -e "s/child-theme-name/$themename/g" -i '' wp-content/themes/$themeslug/style.css
 sed -e "s/child-theme-url/${themeurl////\/}/g" -i '' wp-content/themes/$themeslug/style.css
