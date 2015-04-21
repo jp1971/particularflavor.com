@@ -47,14 +47,14 @@ printf '.\n'
 printf '.\n'
 
 # Replace placeholders with user defined values
-sed -e 's/manifest-child-theme/$themename/g' -i '' bin/bower/postinstall.sh
-sed -e 's/manifest-child-theme/$themeslug/g' -i '' grunt/config.js
-sed -e 's/manifest-child-theme/$themeslug/g' -i '' .bowerrc
-sed -e 's/manifest-child-theme/$themeslug/g' -i '' bower.json
-sed -e 's/manifest-child-theme-url/$themeurl/g' -i '' bower.json
-sed -e 's/manifest-child-theme/$themeslug/g' -i '' package.json
-sed -e 's/manifest-child-theme-url/$themeurl/g' -i '' package.json
-sed -e 's/child-theme-name/$themename/g' -i '' wp-content/themes/$themeslug/style.css
+sed -e "s/manifest-child-theme/$themename/g" -i '' bin/bower/postinstall.sh
+sed -e "s/manifest-child-theme/$themeslug/g" -i '' grunt/config.js
+sed -e "s/manifest-child-theme/$themeslug/g" -i '' .bowerrc
+sed -e "s/manifest-child-theme/$themeslug/g" -i '' bower.json
+sed -e "s/manifest-child-theme-url/$themeurl/g" -i '' bower.json
+sed -e "s/manifest-child-theme/$themeslug/g" -i '' package.json
+sed -e "s/manifest-child-theme-url/$themeurl/g" -i '' package.json
+sed -e "s/child-theme-name/$themename/g" -i '' wp-content/themes/$themeslug/style.css
 sed -e "s/child-theme-url/${themeurl////\/}/g" -i '' wp-content/themes/$themeslug/style.css
 
 # Remove Manifest Child Theme from composer.json
@@ -68,7 +68,7 @@ echo
 echo -n 'Remove this shell script (y/N)?'
 read del_bool
 
-if [ '$del_bool' == 'y' ]; then
+if [ "$del_bool" == 'y' ]; then
 	printf 'Removing shell script'
 	sleep .5  
 	printf '.'
