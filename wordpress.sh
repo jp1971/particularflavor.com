@@ -14,3 +14,4 @@ rm -f wp-content/plugins/hello.php
 rm -rf wp-content/themes/twentyfifteen
 rm -rf wp-content/themes/twentyfourteen
 rm -rf wp-content/themes/twentythirteen
+rm -f wordpress.sh
