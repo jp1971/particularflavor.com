@@ -37,16 +37,16 @@ rm -rf manifest-scaffold.git
 Clone the repository to which you mirror pushed in the step above, `cd` into its root, then open a terminal and run:
 
 ```
-composer install
-```
-
-When Composer finishes installing the scaffold's dependencies, run:
-
-```
 ./wordpress.sh
 ```
 
-Once WordPress is installed, configure the Manifest parent and child themes by running:
+When the script finishes installing, run:
+
+```
+composer install
+```
+
+Once Composer's project dependencies are installed, configure the Manifest parent and child themes by running:
 
 ```
 ./mainfest.sh
