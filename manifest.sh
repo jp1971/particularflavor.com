@@ -47,13 +47,13 @@ printf '.\n'
 printf '.\n'
 
 # Replace placeholders with user defined values
-sed -e "s/manifest-child-theme/$themename/g" -i '' bin/bower/postinstall.sh
+sed -e "s/manifest-child-theme/$themeslug/g" -i '' bin/bower/postinstall.sh
 sed -e "s/manifest-child-theme/$themeslug/g" -i '' grunt/config.js
 sed -e "s/manifest-child-theme/$themeslug/g" -i '' .bowerrc
-sed -e "s/manifest-child-theme/$themeslug/g" -i '' bower.json
 sed -e "s/manifest-child-theme-url/$themeurl/g" -i '' bower.json
-sed -e "s/manifest-child-theme/$themeslug/g" -i '' package.json
+sed -e "s/manifest-child-theme/$themeslug/g" -i '' bower.json
 sed -e "s/manifest-child-theme-url/$themeurl/g" -i '' package.json
+sed -e "s/manifest-child-theme/$themeslug/g" -i '' package.json
 sed -e "s/child-theme-name/$themename/g" -i '' wp-content/themes/$themeslug/style.css
 sed -e "s/child-theme-url/${themeurl////\/}/g" -i '' wp-content/themes/$themeslug/style.css
 
@@ -76,7 +76,7 @@ if [ "$del_bool" == 'y' ]; then
 	printf '.'
 	sleep .5  
 	printf '.\n'
-	rm build.sh
+	rm manifest.sh
 else
 	printf 'Not removing shell script...\n'
 fi
