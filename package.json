@@ -1,21 +1,21 @@
 {
-  "name": "mnfst-child-theme",
+  "name": "manifest-child-theme",
   "version": "1.0.0",
-  "description": "The grunt package list for mnfst-child-theme",
+  "description": "The grunt package list for manifest-child-theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "mnfst-child-theme-uri.git"
+    "url": "manifest-child-theme-url.git"
   },
   "author": "athletics",
   "license": "ISC",
   "bugs": {
-    "url": "mnfst-child-theme-uri/issues"
+    "url": "manifest-child-theme-url/issues"
   },
-  "homepage": "mnfst-child-theme-uri",
+  "homepage": "manifest-child-theme-url",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",

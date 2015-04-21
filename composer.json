@@ -3,8 +3,8 @@
     "preferred-install": "dist"
   },
   "require": {
-    "mnfst": "dev-master",
-    "mnfst-child-theme": "dev-master",
+    "manifest": "dev-master",
+    "manifest-child-theme": "dev-master",
     "composer/installers": "~1.0"
   },
   "require-dev": {
