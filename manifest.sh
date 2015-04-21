@@ -47,7 +47,7 @@ printf '.\n'
 printf '.\n'
 
 # Replace placeholders with user defined values
-sed -e 's/manifest-child-theme/$themename/g' -i '' bin/bower/post_install.sh
+sed -e 's/manifest-child-theme/$themename/g' -i '' bin/bower/postinstall.sh
 sed -e 's/manifest-child-theme/$themeslug/g' -i '' grunt/config.js
 sed -e 's/manifest-child-theme/$themeslug/g' -i '' .bowerrc
 sed -e 's/manifest-child-theme/$themeslug/g' -i '' bower.json
