@@ -11,7 +11,7 @@ This repository is a scaffold for the Make Model Manifest development environmen
 
 ##Prerequisites
 
-You'll need Composer and wget for the instructions below. However, you'll need all pre-requisites from the link to complete subsequent steps, so you should make sure everything is installed:
+You'll need Composer and wget for the instructions below. However, you'll need all prerequisites from the link to complete subsequent steps, so you should make sure everything is installed:
 
 http://docs.athleticsnyc.com/development-environment-prerequisites/
 
