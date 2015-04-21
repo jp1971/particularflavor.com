@@ -16,7 +16,7 @@ echo -n 'Child theme slug (e.g. manifest): '
 read themeslug
 echo -n 'Child theme Github URL segment (e.g. The "manifest" in https://github.com/athletics/manifest): '
 read githubslug
-themeurl = "https://github.com/athletics/$githubslug"
+themeurl="https://github.com/athletics/$githubslug"
 echo
 
 printf 'Changing directory names' 
@@ -84,3 +84,4 @@ fi
 echo
 
 printf 'Now go make something rad with Manifest!\n'
+echo
