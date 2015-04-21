@@ -54,7 +54,7 @@ sed -e 's/manifest-child-theme/$themeslug/g' -i '' bower.json
 sed -e 's/manifest-child-theme-url/$themeurl/g' -i '' bower.json
 sed -e 's/manifest-child-theme/$themeslug/g' -i '' package.json
 sed -e 's/manifest-child-theme-url/$themeurl/g' -i '' package.json
-sed -e 's/child-theme-name/$themename/g' -i '' wp-content/$themeslug/style.css
+sed -e 's/child-theme-name/$themename/g' -i '' wp-content/themes/$themeslug/style.css
 sed -e 's/child-theme-url/${themeurl////\/}/g' -i '' wp-content/$themeslug/style.css
 
 # Remove Manifest Child Theme from composer.json
