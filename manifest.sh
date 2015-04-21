@@ -35,7 +35,7 @@ sleep .5
 printf '.'
 sleep .5  
 printf '.\n'
-mv wp-content/themes/$themeslug/less/manifest-child-theme-bootstrap.less wp-content/themes/$themeslug/less/$themeslug-bootstrap.less 
+mv wp-content/themes/$themeslug/less/app/manifest-child-theme-bootstrap.less wp-content/themes/$themeslug/less/app/$themeslug-bootstrap.less 
 
 printf 'Changing file contents' 
 sleep .5  
@@ -55,7 +55,7 @@ sed -e 's/manifest-child-theme-url/$themeurl/g' -i '' bower.json
 sed -e 's/manifest-child-theme/$themeslug/g' -i '' package.json
 sed -e 's/manifest-child-theme-url/$themeurl/g' -i '' package.json
 sed -e 's/child-theme-name/$themename/g' -i '' wp-content/themes/$themeslug/style.css
-sed -e "s/child-theme-url/${themeurl////\/}/g" -i '' wp-content/$themeslug/style.css
+sed -e "s/child-theme-url/${themeurl////\/}/g" -i '' wp-content/themes/$themeslug/style.css
 
 # Remove Manifest Child Theme from composer.json
 sed -e '/manifest-child-theme/d' -i '' composer.json
