@@ -37,6 +37,12 @@ rm -rf manifest-scaffold.git
 Clone the repository to which you mirror pushed in the step above, `cd` into its root, then open a terminal and run:
 
 ```
+composer install
+```
+
+When Composer finishes installing the scaffold's dependencies, run:
+
+```
 ./wordpress.sh
 ```
 
