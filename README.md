@@ -46,6 +46,8 @@ Clone the repository to which you mirror pushed in the step above, `cd` into its
 ./wordpress.sh
 ```
 
+**Note:** If you haven't installed `wget`, you'll get the following error: `wget: command not found`. Please see the [Development Environment Prerequisites](http://docs.athleticsnyc.com/development-environment-prerequisites/).
+
 When the script finishes installing, run:
 
 ```
