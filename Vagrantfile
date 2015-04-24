@@ -19,6 +19,9 @@ Vagrant.configure("2") do |config|
   # via the IP. Host-only networks can talk to the host machine as well as
   # any other machines on the same network, but cannot be accessed (through this
   # network interface) by any external networks.
+  # A list of current Athletics Vagrant boxes can be found at
+  # http://docs.athleticsnyc.com/vagrant-box-ip-addresses-and-host-names/
+  # Please update the doc with the IP Address and slug of this project
   config.vm.network :private_network, ip: "10.20.15.X"
 
   config.vm.provider :virtualbox do |vb|
