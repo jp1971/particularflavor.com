@@ -1,4 +1,4 @@
-var project = 'manifest-child-theme';
+var project = 'particular-flavor';
 
 module.exports = {
 

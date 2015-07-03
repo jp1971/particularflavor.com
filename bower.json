@@ -1,9 +1,9 @@
 {
-  "name": "manifest-child-theme",
+  "name": "particular-flavor",
   "version": "0.1.0",
-  "homepage": "manifest-child-theme-url",
+  "homepage": "https://github.com/jp1971/particular-flavor",
   "authors": [
-    "Athletics <http://athleticsnyc.com/>"
+    "Jameson Proctor <http://particularflavor.com/>"
   ],
   "license": "MIT",
   "ignore": [
