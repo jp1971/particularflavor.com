@@ -1,0 +1,45 @@
+{% extends 'base.twig' %}
+
+{% block header %}
+
+	<a href="{{ site.url }}">
+		<h2>Particular Flavor</h2>
+	</a>
+
+	<div class="search">
+		{{ function('get_search_form', true) }}
+	</div>
+
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block sidebar %}
+	
+	<div class="sidebar grid-4">
+
+		<h4><i class="fa fa-twitter-square"></i>Twitter</h4>
+
+		<!-- to use with intents -->
+		<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+		{% for tweet in tweets %}
+
+		    <p class="twitter">{{ tweet.text|twitterfy }}</p>
+
+		{% endfor %}
+
+		<h4><i class="fa fa-github-square"></i>Github</h4>
+		
+		{{ github }}
+
+	</div>
+
+{% endblock %}
+
+{% block footer %}
+
+	<h2>Thinking | Making</h2>
+
+{% endblock %}

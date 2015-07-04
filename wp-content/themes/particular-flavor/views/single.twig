@@ -1,0 +1,25 @@
+{% extends 'index.twig' %}
+
+{% block content %}
+
+	<div class="content grid-8">
+		{#{ post.post_date | date('F j, Y') }#}
+		<h1>{{ post.title }}</h1>
+		<hr />
+		{{ post.content }}
+		<div class="categories">
+			Posted in:
+			{% for cat in post.terms( 'categories' ) %}
+			
+				<a href="{{ cat.link }}">{{ cat.name }}</a>
+				{{ loop.last ? '' : ' | ' }}
+			
+			{% endfor %}					
+		</div>
+		{# <button>{{ post.comment_count}} Comments. Add yours.</button> #}
+		<div class="comments">
+			{# { function( 'comments_template', '/comments.php', true ) } #}
+		</div>
+	</div>
+
+{% endblock %}

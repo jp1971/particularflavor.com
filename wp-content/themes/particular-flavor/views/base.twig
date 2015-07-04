@@ -1,0 +1,66 @@
+<!doctype html>
+<!--[if IE 9]><html class="no-js lt-ie10" {{ site.language_attributes }}> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" {{ site.language_attributes }}> <!--<![endif]-->
+
+    <head>
+
+        {% block head %}
+        
+            <link href='http://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,700,400italic|Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
+
+            <meta charset="utf-8" />
+            <title>{{wp_title}}</title>
+            <meta name="description" content="{{site.description}}">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- Fav and touch icons -->
+            <link rel="shortcut icon" href="{{site.theme.link}}/favicon.png">
+
+        {% endblock %}
+
+        {{ function( 'wp_head' ) }}
+
+    </head>
+
+    <body class="{{ body_class }}" data-source="base.twig">
+
+        <header class="site">
+            <div class="container header">
+
+                {% block header %}
+                {% endblock %}
+
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="wrapper">
+
+                    {% block wrapper %}
+
+                        {% block content %}
+                        {% endblock %}
+
+                        {% block sidebar %}
+                        {% endblock %}
+
+                    {% endblock %}
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="site">
+            <div class="container footer">
+
+                {% block footer %}
+                {% endblock %}
+                
+            </div>
+        </footer>
+
+        {{ function( 'wp_footer' ) }}
+
+    </body>
+</html>    
